@@ -18,6 +18,11 @@
       "name": "TestBack.exe"
     },
     "library": {
+      "require": [
+        "lwt",
+        "irmin",
+        "irmin-unix"
+      ],
       "name": "back.lib",
       "namespace": "Back"
     },
@@ -35,8 +40,8 @@
     "@opam/dune": ">=1.6.0",
     "@esy-ocaml/reason": "*",
     "@opam/irmin": ">=2.0.0",
+    "@opam/irmin-unix": "^2.1.0",
     "@opam/lwt": ">=2.5.0",
-    "@opam/irmin-unix": "2.1.0",
     "ocaml": "^4.4.0"
   },
   "devDependencies": {
